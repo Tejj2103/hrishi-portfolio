@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && npx wrangler pages deploy out --project-name=my-next-app",
+    "build": "next build && npx wrangler pages deploy out --project-name=hrishi-portfolio",
     "start": "next start",
     "lint": "next lint"
   },
