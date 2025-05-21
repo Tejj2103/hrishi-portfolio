@@ -22,5 +22,40 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: var(--font-poppins), sans-serif; */
+}
+
+.glry-imgs
+{
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  height: 70dvh
+}
+
+@media screen and (max-width: 768px) {
+  .glry-imgs
+  {
+    flex-direction: column;
+  }
+}
+
+.imgs-container
+{
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--background);
+}
+
+.photo
+{
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
