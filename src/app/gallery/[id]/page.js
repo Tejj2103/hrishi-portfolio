@@ -24,4 +24,11 @@ const ImageDetailPage = ({ params }) => {
     );
 };
 
+export async function generateStaticParams() {
+    // Replace with your actual dynamic IDs
+    const ids = ['1', '2', '3']; // or fetch from CMS or local data file
+  
+    return ids.map(id => ({ id }));
+  }
+
 export default ImageDetailPage;

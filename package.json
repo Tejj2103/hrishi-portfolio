@@ -2,12 +2,9 @@
   "name": "hrishi",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "20.11.1"
-  },
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && npx wrangler deploy src/index.ts --assets=./dist",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
