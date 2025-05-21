@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Gallery  onClick={handlePhotoClick}/>
+      <Gallery  onClick={handlePhotoClick} />
       <Contact/>
     </main>
   );

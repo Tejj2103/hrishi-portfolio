@@ -9,7 +9,26 @@ import 'swiper/css/pagination';
 const Gallery = (props) => {
   return (
     <section className="gallery">
-        <div className="bg-[#ffffff] min-h-screen pt-20 pb-20 gap-16">
+      <div className='px-2 my-3 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center h-full"
+            data-swiper-parallax="-100"
+          >
+            <div className="w-full h-[550px] sm:h-50dvh md:h-50dvh lg:h-50dvh overflow-hidden rounded-[8px] shadow-lg">
+              <img
+                onClick={() => props.onClick(src)}
+                src={src.src}
+                alt={src.alt}
+                className="w-full h-full object-cover hover:opacity-75 cursor-pointer"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="bg-[#ffffff] min-h-screen pt-20 pb-20 gap-16">
           <h1 className='text-center font-[family-name:var(--font-poppins)] text-3xl pb-8'>Gallery</h1>
           <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh]">
             <div
@@ -60,8 +79,8 @@ const Gallery = (props) => {
               ))}
             </Swiper>
           </div>
-        </div>
-      </section>
+        </div> */}
+    </section>
   )
 }
 
