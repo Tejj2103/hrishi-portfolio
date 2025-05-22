@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main>
       <section className="hero">
-        <div className="items-center justify-items-center min-h-screen pt-20 pb-20 gap-16 bg-black">
+        <div className="items-center justify-items-center pt-20 pb-20 gap-16 bg-black">
           <p className="text-gray-400 font-[family-name:var(--font-moonwalk)] uppercase text-2xl sm:text-6xl lg:text-9xl"><span className="text-amber-50">H</span>rishita <span className="text-amber-50">B</span>handari</p>
           <div className='flex flex-row gap-4 p-8'>
             <button className='text-gray-400 text-xl sm:text-2xl pr-6 pl-6 pb-2 pt-2 font-[family-name:var(--font-poppins)] rounded-2xl border-1 border-gray-400 hover:text-black hover:bg-white cursor-pointer' onClick={() => router.push('/photography')}>Photography</button>
