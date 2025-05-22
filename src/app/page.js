@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { images } from './data/data';
+import Link from 'next/link';
 import Contact from './contact/page';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -12,7 +13,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 export default function Home() {
   const router = useRouter();
   const handlePhotoClick = (photo) => {
-    router.push(`/gallery/${photo.id}`);
+    // router.push(`/gallery/${photo.id}`);
   }
 
   return (
