@@ -31,10 +31,30 @@ export default function Home() {
               guidance, and an intrapreneurial mindset that drives continuous growth both in studies
               and at work.</p>
             <div className='flex flex-row gap-4 p-8'>
-              <FontAwesomeIcon size='2x' icon={faInstagram} className="fa-fw hover:text-white cursor-pointer" color='#99a1af' />
-              <FontAwesomeIcon size='2x' icon={faLinkedin} className="fa-fw hover:text-white cursor-pointer" color='#99a1af' />
-              <FontAwesomeIcon size='2x' icon={faFacebook} className="fa-fw hover:text-white cursor-pointer" color='#99a1af' />
-              <FontAwesomeIcon size='2x' icon={faGithub} className="fa-fw hover:text-white cursor-pointer" color='#99a1af' />
+              <FontAwesomeIcon
+                onClick={() => router.push('https://www.instagram.com/bhandari.hrishita/')}
+                size='2x'
+                icon={faInstagram}
+                className="fa-fw hover:text-white cursor-pointer"
+                color='#99a1af' />
+              <FontAwesomeIcon
+                onClick={() => router.push('https://www.linkedin.com/in/hrishita-bhandari-309183197/')}
+                size='2x'
+                icon={faLinkedin}
+                className="fa-fw hover:text-white cursor-pointer"
+                color='#99a1af' />
+              <FontAwesomeIcon
+                // onClick={() => router.push('https://www.linkedin.com/in/hrishita-bhandari-309183197/')}
+                size='2x'
+                icon={faFacebook}
+                className="fa-fw hover:text-white cursor-pointer"
+                color='#99a1af' />
+              <FontAwesomeIcon
+                // onClick={() => router.push('https://www.linkedin.com/in/hrishita-bhandari-309183197/')}
+                size='2x'
+                icon={faGithub}
+                className="fa-fw hover:text-white cursor-pointer"
+                color='#99a1af' />
             </div>
           </div>
         </div>
