@@ -28,7 +28,7 @@ const ImageDetailPage = ({ params }) => {
 
 export async function generateStaticParams() {
     // Replace with your actual dynamic IDs
-    const ids = Array.from({ length: 24 }, (_, i) => (i + 1).toString());
+    const ids = Array.from({ length: 28 }, (_, i) => (i + 1).toString());
 
     return ids.map(id => ({ id }));
 }
