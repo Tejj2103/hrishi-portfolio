@@ -13,7 +13,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 export default function Home() {
   const router = useRouter();
   const handlePhotoClick = (photo) => {
-    // router.push(`/gallery/${photo.id}`);
+    router.push(`/gallery/${photo.id}`);
   }
 
   return (
