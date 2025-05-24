@@ -14,10 +14,10 @@ const ImageDetailPage = ({ params }) => {
             <div className='imageDetails w-full overflow-hidden'>
                 <div className='img-details'>
                     <p className='text-black pb-8'>
-                        This photograph beautifully captures a moment in time, telling a story that resonates deeply with its viewers. The interplay of colors creates a vivid timeline, where each hue seems to narrate a chapter of its own.
+                        {imageDetails.description}
                     </p>
                     <img
-                        className='object-contain h-[80dvh] w-full pb-8'
+                        className='object-contain h-[100%] w-[100%] pb-8'
                         src={imageDetails.src}
                         alt={imageDetails.alt} />
                 </div>
@@ -28,7 +28,7 @@ const ImageDetailPage = ({ params }) => {
 
 export async function generateStaticParams() {
     // Replace with your actual dynamic IDs
-    const ids = Array.from({ length: 28 }, (_, i) => (i + 1).toString());
+    const ids = Array.from({ length: 33 }, (_, i) => (i + 1).toString());
 
     return ids.map(id => ({ id }));
 }
