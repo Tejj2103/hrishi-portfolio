@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-center justify-center p-8'>
             {/* <p className='text-white font-[family-name:var(--font-moonwalk)]'>About me</p> */}
-            <p className='text-center text-white p-8 w-full sm:w-[60%] '>Carving the nature's beauty through my lenses and my brushes</p>
+            <p className='text-center text-white p-8 w-full sm:w-[60%]'>Carving the nature&apos;s beauty through my lenses and my brushes</p>
             <div className='flex flex-row gap-4 p-8'>
               <FontAwesomeIcon
                 onClick={() => router.push('https://www.instagram.com/bhandari.hrishita/')}
